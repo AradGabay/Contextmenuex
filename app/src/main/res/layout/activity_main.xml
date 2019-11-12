@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose Progression Type:"/>
+
+
+    <ToggleButton
+        android:id="@+id/tgb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textOn="Geometrical"
+        android:onClick="checkcondition"
+        android:textOff="Arithmetic"
+        />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+
+
+
+    <EditText
+        android:id="@+id/muloradd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal|number"
+        android:gravity="center"
+        android:hint="Set difference"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+
+    <EditText
+        android:id="@+id/whatfirstvar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal|number"
+        android:gravity="center"
+        android:hint="Enter first variable"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="showfirst20"
+        android:text="next"/>
+
+
+
+
+
+</LinearLayout>
